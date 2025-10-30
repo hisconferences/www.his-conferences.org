@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Registration - HIS 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../assets/css/style.css?v=2.0" rel="stylesheet">
+    <style>
+        .registration-container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            color: #008251;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid #008251;
+        }
+        
+        .registration-cta {
+            background: linear-gradient(135deg, #008251 0%, #00a566 100%);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            box-shadow: 0 8px 24px rgba(0, 130, 81, 0.2);
+        }
+        
+        .registration-cta h2 {
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .registration-cta p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .register-btn {
+            background: white;
+            color: #008251;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .register-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            color: #00a566;
+        }
+        
+        .register-btn i {
+            font-size: 1.3rem;
+        }
+        
+        .registration-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        
+        .registration-table th, 
+        .registration-table td {
+            padding: 0.75rem 1rem;
+            text-align: center;
+            border: 1px solid #dee2e6;
+        }
+        
+        .registration-table th {
+            background-color: #008251;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .registration-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        
+        .registration-table .category-header {
+            background-color: #e9ecef;
+            font-weight: 600;
+            text-align: left;
+        }
+        
+        .registration-table .tour-row {
+            background-color: #fff3cd;
+        }
+        
+        .note-box {
+            background-color: #e8f5f3;
+            border-left: 4px solid #008251;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 2rem;
+        }
+        
+        .note-box h4 {
+            color: #008251;
+            margin-bottom: 1rem;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        
+        .contact-info {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border: 1px solid #dee2e6;
+        }
+        
+        .contact-info h4 {
+            color: #008251;
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .registration-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .registration-cta {
+                padding: 2rem 1.5rem;
+            }
+            
+            .registration-cta h2 {
+                font-size: 1.5rem;
+            }
+            
+            .register-btn {
+                padding: 0.9rem 2rem;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <header class="hero-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="display-4 text-white text-center">HIS 2025 @ Bandung</h1>
+                <h2 class="h2 text-white text-center">Registration</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Registration CTA -->
+                <div class="registration-cta">
+                    <h2>Register for HIS 2025 Conference</h2>
+                    <p>Secure your spot at the 14th International Conference on Health Information Science</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfAKai2HTOp-0lhO1QxxzIWjJc_Fieu_jSzQTBWgxyURmQx3w/viewform?usp=dialog" 
+                       target="_blank" 
+                       class="register-btn">
+                        <i class="fas fa-user-plus"></i>
+                        Register Now
+                    </a>
+                </div>
+
+                <div class="registration-container">
+                    <h2 class="section-title">Registration Fees</h2>
+                    
+                    <table class="registration-table">
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Participants</th>
+                                <th colspan="2">Early Bird (USD)</th>
+                                <th colspan="2">Regular (USD)</th>
+                            </tr>
+                            <tr>
+                                <th>Onsite</th>
+                                <th>Online</th>
+                                <th>Onsite</th>
+                                <th>Online</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="category-header">Student Presenter</td>
+                                <td>$400</td>
+                                <td>$300</td>
+                                <td>$450</td>
+                                <td>$350</td>
+                            </tr>
+                            <tr>
+                                <td class="category-header">Professional Presenter</td>
+                                <td>$500</td>
+                                <td>$400</td>
+                                <td>$550</td>
+                                <td>$450</td>
+                            </tr>
+                            <tr>
+                                <td class="category-header">Participant (Audience / Non-Presenter)</td>
+                                <td>$125</td>
+                                <td>$75</td>
+                                <td>$150</td>
+                                <td>$100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <div class="note-box">
+                        <h4><i class="fas fa-info-circle me-2"></i>Important Notes</h4>
+                        <ul>
+                            <li>Early bird registration deadline: <strong>7 October 2025</strong></li>
+                            <li>Regular registration deadline: <strong>15 October 2025</strong></li>
+                            <li>At least one author must register for each accepted paper to be included in the proceedings</li>
+                            <li>Registration fee includes access to all sessions, conference materials, coffee breaks, and lunch during conference days</li>
+                            <li>Onsite registration includes the welcome reception and conference dinner</li>
+                            <li>For each additional paper, an extra fee of $200 will be charged</li>
+                            <li>Each paper is limited to 12 pages. Extra pages (maximum 2) will be charged at $100 per page</li>
+                        </ul>
+                    </div>
+                    
+                    <h2 class="section-title">What's Included</h2>
+                    
+                    <table class="registration-table">
+                        <thead>
+                            <tr>
+                                <th>Registration Type</th>
+                                <th>Conference Materials</th>
+                                <th>Lunches</th>
+                                <th>Coffee Breaks</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="category-header">Student/Professional Presenter (Onsite)</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="category-header">Student/Professional Presenter (Online)</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="category-header">Participant (Onsite)</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                            </tr>
+                            <tr>
+                                <td class="category-header">Participant (Online)</td>
+                                <td><i class="fas fa-check text-success"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                                <td><i class="fas fa-times text-danger"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 class="section-title">Optional Add-Ons</h2>
+
+                    <table class="registration-table">
+                        <thead>
+                            <tr>
+                                <th>Optional Package</th>
+                                <th>Description</th>
+                                <th>Price (USD)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="tour-row">
+                                <td class="category-header"><i class="fas fa-bus me-2"></i>Cultural Tour Package</td>
+                                <td style="text-align: left;">Full-day Bandung sight-seeing tour (booked separately). Includes: AC bus transport, lunch & dinner, entrance tickets, professional tour guide</td>
+                                <td><strong>$100</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="note-box" style="background: linear-gradient(135deg, #fff3cd 0%, #fff8e1 100%); border-left-color: #ffc107;">
+                        <h4 style="color: #856404;"><i class="fas fa-exclamation-circle me-2"></i>About Cultural Tour Package</h4>
+                        <ul style="color: #495057;" class="mb-0">
+                            <li><strong>This is an optional add-on</strong> and NOT included in conference registration fees</li>
+                            <li>Tour must be booked separately from conference registration</li>
+                            <li>Includes: Full-day tour, lunch, dinner, AC bus transport, entrance tickets, and professional guide</li>
+                            <li>Visit destinations: Tangkuban Perahu Volcano, Kawah Domas, Museum Asia Afrika, Saung Angklung, Factory Outlets</li>
+                            <li>For complete itinerary and booking, visit our <a href="things-to-do.html" style="color: #856404; font-weight: bold; text-decoration: underline;">Sight Seeing Tour page</a></li>
+                        </ul>
+                    </div>
+
+                    <h2 class="section-title">Registration Process</h2>
+                    
+                    <ol>
+                        <li>Click the <strong>"Register Now"</strong> button above to fill out the online registration form</li>
+                        <li>Pay using one of the available methods:
+                            <ul>
+                                <li><strong>Bank Transfer (Wire/TT)</strong> - via secure card gateway</li>
+                                <li><strong>Indonesian E-Wallets (QRIS)</strong> - OVO, GoPay, DANA, LinkAja</li>
+                                <li><strong>International Credit Card</strong> - for overseas participants</li>
+                            </ul>
+                        </li>
+                        <li>Email the payment proof to <a href="mailto:his2025@ideas-lab.org" class="text-success fw-bold">his2025@ideas-lab.org</a> (include your name and paper ID)</li>
+                        <li>You will receive a confirmation email with your registration details</li>
+                        <li>For onsite participants, collect your conference kit at the registration desk</li>
+                    </ol>
+                    
+                    <div class="contact-info">
+                        <h4><i class="fas fa-envelope me-2"></i>Registration Contact</h4>
+                        <p>For any inquiries regarding registration, please contact:</p>
+                        <p><strong>Email:</strong> <a href="mailto:his2025@ideas-lab.org" class="text-success">his2025@ideas-lab.org</a></p>
+                        <p><strong>Phone:</strong> +62 897 9400 787</p>
+                        <p class="mb-0"><strong>Security Note:</strong> ICOT will never request payment to personal accounts or via messaging apps. Use only official channels listed above.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4" id="sidebar"></div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/supabase-config.js?v=2.0"></script>
+    <script src="../assets/js/components.js?v=2.0"></script>
+    <script src="../assets/js/clock.js?v=2.0"></script>
+    <script src="../assets/js/main.js?v=2.0"></script>
+</body>
+</html>

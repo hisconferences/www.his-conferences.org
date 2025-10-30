@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+    <title>Organization - HIS 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="../assets/css/style.css?v=2.0" rel="stylesheet">
+<script src="../assets/js/components.js?v=2.0"></script>
+    <style>
+        /* Organization Committee Specific Styles */
+        .committee-container {
+            margin-bottom: 30px;
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+        
+        .committee-header {
+            background-color: #008251;
+            color: white;
+            padding: 15px 20px;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        
+        .committee-header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .committee-members {
+            background-color: white;
+            padding: 0;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .committee-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 15px;
+        }
+        
+        .committee-member {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+            position: relative;
+            border-left: 4px solid #008251;
+            background-color: #f8f9fa;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .member-name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .member-affiliation {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* For roles with only one or two members */
+        .small-committee .committee-member {
+            width: 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .committee-member {
+                width: calc(50% - 30px);
+                margin-right: 15px;
+                margin-left: 15px;
+            }
+            
+            /* Single member committees still use full width */
+            .small-committee .committee-member {
+                width: calc(100% - 30px);
+            }
+        }
+        
+        /* Loading indicator */
+        #loadingIndicator {
+            padding: 30px;
+            text-align: center;
+            color: #008251;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Hero Banner -->
+    <header class="hero-banner committee-banner">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="display-4 text-white text-center">HIS 2025 @ Bandung</h1>
+                <h2 class="h2 text-white text-center">Organization Committee</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <!-- Loading indicator -->
+                <div id="loadingIndicator">
+                    <i class="fas fa-spinner fa-spin fa-3x"></i>
+                    <p>Loading committee information...</p>
+                </div>
+                
+                <!-- Committee Container -->
+                <div id="committeeContainer">
+                    <!-- General Co-Chairs -->
+                    <div class="committee-container">
+                        <div class="committee-header">
+                            <h2>General Co-Chairs</h2>
+                        </div>
+                        <div class="committee-members">
+                            <div class="committee-row">
+                                <div class="committee-member">
+                                    <div class="member-name">Emil R Kaburuan</div>
+                                    <div class="member-affiliation">IDEAS LAB, Indonesia</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Yanchun Zhang</div>
+                                    <div class="member-affiliation">Zhejiang Normal University, China</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PC Co-Chairs -->
+                    <div class="committee-container">
+                        <div class="committee-header">
+                            <h2>PC Co-Chairs</h2>
+                        </div>
+                        <div class="committee-members">
+                            <div class="committee-row">
+                                <div class="committee-member">
+                                    <div class="member-name">Siuly Siuly</div>
+                                    <div class="member-affiliation">Victoria University, Australia</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Abba Suganda Girsang</div>
+                                    <div class="member-affiliation">Bina Nusantara University, Indonesia</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Yong Zhang</div>
+                                    <div class="member-affiliation">TsingHua University, China</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Qun JIN</div>
+                                    <div class="member-affiliation">Waseda University, Japan</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Publicity Co-Chairs -->
+                    <div class="committee-container">
+                        <div class="committee-header">
+                            <h2>Publicity Co-Chairs</h2>
+                        </div>
+                        <div class="committee-members">
+                            <div class="committee-row">
+                                <div class="committee-member">
+                                    <div class="member-name">Muhammad Tariq Sadiq</div>
+                                    <div class="member-affiliation">University of Essex, England, United Kingdom</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">G R Sinha</div>
+                                    <div class="member-affiliation">GSFC University, Vadodara, India</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Enamul Kabir</div>
+                                    <div class="member-affiliation">University of Sothern Queensland, Australia</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Shaofu Lin</div>
+                                    <div class="member-affiliation">Beijing University of Technology, China</div>
+                                </div>
+                                <div class="committee-member">
+                                    <div class="member-name">Leonard Goeirmanto</div>
+                                    <div class="member-affiliation">Bandung Institute of Technology and Science, Indonesia</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Continue with all other roles -->
+                </div>
+            </div>
+            
+            <!-- Sidebar -->
+            <div class="col-lg-4" id="sidebar">
+                <!-- Time Display -->
+                <div class="time-display mb-4">
+                    <h4 class="time-heading">
+                        <i class="fas fa-clock"></i>
+                        Time in Bandung, Indonesia
+                    </h4>
+                    <div class="date-display" id="currentDate"></div>
+                    <div class="digital-clock" id="digitalClock">
+                        <div class="time-segment">
+                            <span id="hours">00</span>
+                            <span class="time-label">HOURS</span>
+                        </div>
+                        <span class="time-separator">:</span>
+                        <div class="time-segment">
+                            <span id="minutes">00</span>
+                            <span class="time-label">MINUTES</span>
+                        </div>
+                        <span class="time-separator">:</span>
+                        <div class="time-segment">
+                            <span id="seconds">00</span>
+                            <span class="time-label">SECONDS</span>
+                        </div>
+                        <div class="time-period" id="period">AM</div>
+                    </div>
+                </div>
+                
+                <!-- Previous Conferences Box -->
+                <div class="previous-conferences-box">
+                    <h4 class="conf-heading">
+                        <i class="fas fa-history"></i>
+                        Previous Conferences
+                    </h4>
+                    <div class="conferences-container">
+                        <ul class="conference-list" id="prevConferencesList">
+                            <!-- Will be populated by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/supabase-config.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/clock.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize page components
+            initializePageComponents();
+            
+            // Start the clock
+            updateClock();
+            setInterval(updateClock, 1000);
+            
+            // Load organization members
+            loadOrganizationMembers();
+            
+            // Load previous conferences
+            renderPreviousConferences();
+        });
+    </script>
+</body>
+</html>
