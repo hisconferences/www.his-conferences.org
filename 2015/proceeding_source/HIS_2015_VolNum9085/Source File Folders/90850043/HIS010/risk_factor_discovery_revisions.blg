@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: risk_factor_discovery_revisions.aux
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: refs.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in R
+
+Done.
+You've used 20 entries,
+            4039 wiz_defined-function locations,
+            948 strings with 11004 characters,
+and the built_in function-call counts, 17286 in all, are:
+= -- 1433
+> -- 414
+< -- 180
++ -- 233
+- -- 65
+* -- 853
+:= -- 2540
+add.period$ -- 43
+call.type$ -- 20
+change.case$ -- 18
+chr.to.int$ -- 411
+cite$ -- 21
+duplicate$ -- 1189
+empty$ -- 1292
+format.name$ -- 83
+if$ -- 3986
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 194
+newline$ -- 85
+num.names$ -- 20
+pop$ -- 410
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1339
+stack$ -- 0
+substring$ -- 976
+swap$ -- 1054
+text.length$ -- 43
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 20
+warning$ -- 1
+while$ -- 88
+width$ -- 22
+write$ -- 225
+(There was 1 warning)

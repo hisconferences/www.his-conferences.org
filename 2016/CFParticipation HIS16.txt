@@ -1,0 +1,82 @@
+	HIS2016 Call for Participation
+
+5th International Conference on Health Information Science 2016
+6-7 November, 2016 | Shanghai, China
+http://www.his-conferences.org/2016/
+
+Join us at the  5th International Conference on Health Information Science (HIS 2016)£¬ 6-7 November, 2016.
+This international gathering brings together a vibrant and diverse community of innovators, thinkers, and progressive educators to delve into leading-edge topics in Health Information Science. We build connections across research, design, and practice to disseminate and exchange multidisciplinary research results in computer science/information technology and health science & services. HIS2016 will be held in Shanghai China (Crown Plaza Fudan).
+
+The program features a two-day program with a number of invited talks by prominent researchers, and 13 research papers and 9 short papers on health information science research areas.
+
+	Highlights:
+	Keynote speakers:
+
+Professor Ling Liu, Distributed Data Intensive Systems Lab, School of Computer Science, Georgia Institute of Technology, US
+Topic: Leveraging Big Data Analytics for HealthCare Applications
+
+Professor Lei Liu, the Institute of Biomedical Sciences at Fudan University, China
+Topic: From Precision Medicine to Smart Medicine
+
+	Invited Speakers:
+
+Professor Fengfeng Zhou, College of Computer Science and Technology, Jilin University, China
+Topic: A comprehensive curation of CRISPR annotations
+
+Professor Uwe Aickelin, The School of Computer Science, The University of Nottingham, UK
+Topic: Robust data mining with applications in medicine
+
+Professor Xingshe Zhou, School of Computer Science, Northwestern Polytechnical University, China;
+
+Professor Ramamohanarao Kotagiri, Computing and Information Systems, The University of Melbourne, Australia
+Topic: Robust identification of Retinal Layers through OCT imaging in the Presence of Pathology
+
+
+	Full papers:
+
+Luming Chen, Shibin Wu, Zhicheng Zhang, Yanchun Zhu, Shaode Yu, Yaoqin Xie and Hefang Zhang. Real-time patient table removal in CT images
+
+Liang Xiao and John Fox. A distributed decision support architecture for the diagnosis and treatment of breast cancer
+
+Zhihua Ji, Shaode Yu, Shibin Wu, Yaoqin Xie and Fashun Yang. Improved GrabCut for human brain computerized tomography image segmentation
+
+Shiqiang Tao, Benjamin Walter, Sisi Gu and Gq Zhang. WIDD: Web-Interface-Driven Development for Clinical Data Capture and Decision Support System for Deep Brain Stimulation
+
+Zhisheng Huang. Knowledge Services Using Rule-based Formalization for Eligibility Criteria of Clinical Trials
+
+Xiaorui Chen, Maureen Murtaugh, Corinna Koebnick, Srinivasan Beddhu, Jennifer Garvin, Mike Conway, Younghee Lee, Ramkiran Gouripeddi and Gang Luo. Dietary Management Software for Chronic Kidney Disease: Current Status and Open Issues
+
+Chunfeng Liu, Rafael Calvo and Renee Lim. EQClinic: a platform for improving medical students¡¯ clinical communication skills
+
+Xinying Wang. 3D Model Automatic Annotation and Retrieval Using LDA Based on Semantic Features
+
+Tianyong Hao, Boyu Chen and Yingying Qu. An Automated Method for Transgender Identification from Clinical Trial Text
+
+Kate MacPhedran and Yunkai Liu. Statistical Modeling Adoption on the Late-Life Function & Disability Instrument compared to Kansas City Cardiomyopathy Questionnaire
+
+Hongyang Jiang, Fen Miao, Mengdi Gao, Xi Hong, Qingyun He, He Ma and Ye Li. A Novel Indicator for Cuff-Less Blood Pressure Estimation Based on Photoplethysmography
+
+Porawat Visutsak and Yan Li. Autism spectrum disorder: Brain images and Registration
+
+JuanyingXie, Ying Li, Ying Zhou and Mingzhao Wang. Differential Feature Recognition of Breast Cancer Patients Based on Minimum Spanning Tree Clustering and F-statistics
+
+
+	Short papers:
+
+Changbin Yu, Jiangang Yang, Haolan Zhang, Yiwen Wang, Ke Huang, Honglei Cui, Mingfang Dai, Hongjian Chen and Yu Liu. A Case Study on Epidemic Disease Cartography Using Geographic Information
+
+Xiaodong Wang. A novel algorithm to determine the cutoff score of the RS-14
+
+Jiming Wu. Healthcare System-Use Behavior: A Meta-Analysis of Its Determinants
+
+Liwei Xu. Internet hospitals study in China
+
+Jingjing He, Mingmin Chen and Zhicheng Li. Edge-aware Local Laplacian Filters for Medical X-Ray Image Enhancement
+
+Lihui Lei and Yuan Cai. A Dietary Nutrition Analysis Method Leveraging Big Data Processing and Fuzzy Clustering
+
+Ye Chen and Hao Fan. Study on Intelligent Home Care Platform Based on Chronic Disease Knowledge Management
+
+Hao Gui, Rong Zheng, Chao Ma, Hao Fan and Liya Xu. An Architecture for Healthcare Big Data Management and Analysis
+
+Xia Jing, Francisca Lekey, Abigail Kacpura and Kathy Jefford. Health indicators within EHR systems in primary care settings: availability and their presentation

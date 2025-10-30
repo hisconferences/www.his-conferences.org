@@ -1,0 +1,75 @@
+
+%%%%%%%%%%%%%%%%%%%%%%% file typeinst.tex %%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This is the LaTeX source for the instructions to authors using
+% the LaTeX document class 'llncs.cls' for contributions to
+% the Lecture Notes in Computer Sciences series.
+% http://www.springer.com/lncs       Springer Heidelberg 2006/05/04
+%
+% It may be used as a template for your own input - copy it
+% to a new file with a new name and use it as the basis
+% for your article.
+%
+% NB: the document class 'llncs' has its own and detailed documentation, see
+% ftp://ftp.springer.de/data/pubftp/pub/tex/latex/llncs/latex2e/llncsdoc.pdf
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[runningheads,a4paper]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+
+\usepackage{url}
+\urldef{\mailsa}\path|{alfred.hofmann, ursula.barth, ingrid.haas, frank.holzwarth,|
+\urldef{\mailsb}\path|anna.kramer, leonie.kunz, christine.reiss, nicole.sator,|
+\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+\def\boxend{\hspace*{\fill} $\Box$}
+\newcommand{\comment}[1]{}
+
+\begin{document}
+
+\mainmatter
+
+\title{\emph{TeenChat}: A Chatterbot System for Sensing and Releasing Adolescents' Stress}
+\author{Jing Huang, Qi Li,Yuanyuan Xue, Taoran Cheng, Shuangqing Xu, \\Jia Jia, Ling Feng}
+\institute{Dept. of Computer Science and Technology, Tsinghua University, Beijing, China \\
+\{j-huang14,liqi13,xue-yy12,xsq10,ctr10\}@mails.tsinghua.edu.cn,
+\{jjia,fengling\}@mail.tsinghua.edu.cn}
+%\makeatletter
+%\setlength{\intextsep}{3pt plus 2pt minus 2pt}
+%\makeatother
+\maketitle
+\begin{abstract}
+More and more adolescents today are suffering from various adolescent stress.
+Too much stress will bring a variety of physical and psychological problems
+including anxiety, depression, and even suicide to the growing youths, whose
+outlook on life and problem-solving ability are still immature enough.
+Traditional face-to-face stress detection and relief methods do not work, confronted with teenagers who are reluctant
+to express their negative emotions to the people in real life.
+In this paper, we present a adolescent-oriented intelligent chatting system called \emph{TeenChat}, which acts as a virtual friend
+to listen, understand, comfort, encourage, and guide stressful adolescents to pour out their bad feelings, and
+thus release the stress.Our 1-month user study demonstrates \emph{TeenChat} is effective on sensing and helping adolescents' stress.
+
+%Some stress is positive. It causes our bodies to release adrenaline, which helps us to accomplish assignments and projects,
+%and can even enhance our performance and problem-solving ability. But chronic stress, which is constant and persists over an extended period of time, can be debilitating and overwhelming. Chronic stress can affect both our physical and psychological well-being by causing a variety of problems including anxiety, insomnia, muscle pain, high blood pressure and a weakened immune system. Research shows that stress can contribute to the development of major illnesses, such as heart disease, depression and obesity. The consequences of chronic stress are serious. Yet, many Americans who experience prolonged stress are not making the necessary lifestyle changes to reduce stress and ultimately prevent health problems.
+\keywords{Adolescent, stress sensing and easing, chat}
+\end{abstract}
+
+\input{Introduction}
+\input{RelatedWork}
+\input{Framework}-;
+\input{StressDetection}
+\input{ResponseGeneration}
+\input{Userstudy}
+%\input{Conclusion}
+
+\bibliographystyle{abbrv}
+\footnotesize
+\bibliography{HIS2014-Ref}
+
+\end{document}

@@ -1,0 +1,44 @@
+
+\section{Introduction}
+
+With the rapid development of society and economy, more and more people live a stressful life. Too much stress threatens
+human's physical and psychological health~\cite{60kasl1984,61hammen2005}.
+Especially for the youth group, the threat is prone to such bad consequence as
+depression or even suicide due to their spiritual immaturity~\cite{59Statistic}.
+Hence, psychologists and educators have paid great attention to the adolescent stress issue~\cite{56colten1991,57wills1995}.
+Nevertheless, one big difficulty in reality is that most growing adolescents are not willing or hesitate to
+express their feelings to the people, but rather turn to the virtual world for stress release.
+Chatterbot (also known as chatbot or talkbot), as a virtual artificial conversation system, can function as a
+useful channel for cathartic stress relief, as it allows the
+conversational partner to finally get to say what s/he cannot say out loud in real life.
+Recently, \cite{25liu2013} proposed a chatting robot PAL, which
+can answer non-obstructive psychological domain-specific questions. It
+collects numerous psychological Q\&A pairs from the Q\&A community into a local knowledge base,
+and selects a suitable answer to match the user's psychological question, taking
+personal information into consideration.
+However, in most situations, when users tell about their stress,
+they wouldn't only ask some psychological questions. Instead, they pour forth their woes sentence by sentence.
+and what the stressful people need is not only the solutions for their problems,
+but also the feeling of being listened, understood, and comforted.
+Comparatively, psychological domain-specific question-answer based chatting robots are rigid and insufficient in understanding and calming
+users' stressful emotions.
+
+In this study, we aim to build a adolescent-oriented
+intelligent chatting system \emph{TeenChat}, which can on one hand sense adolescents' stress
+throughout the whole conversation
+rather than based on a single question each time in~\cite{25liu2013},
+and on the other hand interact like a virtual friend to guide the stressful adolescents
+to gradually pour out their bad feelings by listening and comforting, and further encourage
+the adolescents by delivering positive messages and answers to their problems.
+To our knowledge, this is the first chatting system in the literature,
+designed specifically for sensing and helping release adolescents' stress in such stress categories as study, self-cognition,
+inter-personal, and affection during the virtual conversation.
+Our 1-month user study demonstrates that \emph{TeenChat's} has achieves 78.34\% precision and 76.12\% recall rate in stress sensing and making the stressful users feel better.
+
+The reminder of the paper is organized as follows.
+We review related work in Section 2, and outline our \emph{TeenChat} framework in
+Section 3. Two core components for stress sensing and response generation
+are detailed in Section 4 and 5, respectively.
+Results of our user study are analyzed in Section 6.
+Section 7 concludes the paper and discusses future work.
+

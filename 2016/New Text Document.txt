@@ -1,0 +1,18 @@
+
+				<div class=picTextGroup>
+				<p>
+				<img height=110 alt=Hong-Mei src="./organization/Hong-Mei.jpg" width=80 border=0>
+				<br/>
+				<span class=title><a href="http://en.sjtu.edu.cn/about-sjtu/administration/mei-hong" target=_blank>Hong Mei</a></span><br/>
+				Shanghai Jiao Tong University, China<span class=moreT></span>
+				</p><br/><br/><br/>
+				</div>
+
+				<div class=picTextGroup>
+				<p>
+				<img height=110 alt=Marek-Rusinkiecwz src="./organization/Marek-Rusinkiewicz.jpg" width=80 border=0>
+				<br/>
+				<span class=title><a href="http://www.researchgate.net/profile/Marek_Rusinkiewicz" target=_blank>Marek Rusinkiewicz</a></span><br/>
+				New Jersey Institute of Technology, USA<span class=moreT></span>
+				</p><br/><br/><br/>
+				</div>

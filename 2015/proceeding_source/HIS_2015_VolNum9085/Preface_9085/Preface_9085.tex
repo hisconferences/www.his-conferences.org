@@ -1,0 +1,789 @@
+% This is LLNCSDE2.TEX, a variation of LLNCS.DEM
+% (the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.3 for LaTeX2e),
+% which can be used by volume editors for the preparation
+% of the front matter pages and the author index
+%
+% Last changes: 16.10.2006, Frank Holzwarth (texhelp@springer.de)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% In order to generate an Author Index do the following:
+% After TeXing this document start the program MakeIndex by typing
+% MAKEINDX -S SPRMINDX.STY <filename>
+% (generates an IND file for the Author Index)
+% into the DOS command line.
+% (At other systems you may have to use the command MAKEINDEX.)
+% Now TeX this file once again, then you will get an Author Index.
+% TeX this file once more, then the TOC will be complete.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{llncs}
+%
+\usepackage{makeidx}  % allows for indexgeneration
+\makeindex
+%
+\begin{document}
+%
+\frontmatter          % for the preliminaries
+\setcounter{page}{5}
+%
+%\pagestyle{headings}  % switches on printing of running heads
+%\addtocmark{Hamiltonian Mechanics} % additional mark in the TOC
+%
+\chapter*{Preface}
+%
+The International Conference Series on Health Information Science (HIS) provides
+a forum for disseminating and exchanging multidisciplinary research results
+in computer science/information technology and health science and services. It
+covers all aspects of health information sciences and systems that support health
+information management and health service delivery.
+
+The Fourth International Conference on Health Information Science (HIS 2015)
+was held in Melbourne, Australia, during May 28 -- 30, 2015. Founded in April 2012 as the International Conference on Health Information Science and their Applications, the conference continues to grow to include an ever broader scope of activities. The main goal of these events is to provide international scientific forums for exchange of new ideas in a number of fields that interact in-depth through discussions with their peers from around
+the world. The scope of the conference includes: (1) medical/health/biomedicine information resources, such as patient medical records, devices and equipments, software and tools to capture, store,
+retrieve, process, analyze, and optimize the use of information in the health domain,
+(2) data management, data mining, and knowledge discovery, all of which
+play a key role in decision making, management of public health, examination of
+standards, privacy and security issues, (3) computer visualization and artificial intelligence for computer-aided diagnosis, and (4) development of new architectures and applications for health information systems.
+
+The conference has solicited and gathered technical research submissions related to all
+aspects of the conference scope. All the submitted papers in the proceeding
+were peer reviewed by at least three international experts drawn from the Program Committee. After the rigorous peer-review process, a total of 20 full papers and 5 short papers among 45 submissions were selected on the basis of originality, significance, and clarity and were accepted for publication in the proceeding. The authors were from 12 countries, including Australia, China, Finland, Germany, Malaysia, Morocco, Saudi Arabia, Sweden, Switzerland, Pakistan, the UK, and the USA. Some papers will be invited to submit the extended versions of their papers to a special issue of the Health Information Science and System Journal, published by BioMed Central (Springer) and the World Wide Web Journal.
+
+The high quality of the program - guaranteed by the presence of an unparalleled number of internationally recognized top experts - can be assessed when reading the contents of the proceeding. The conference will therefore be a unique event, where attendees will be able to appreciate the latest results in their field of expertise, and to acquire additional knowledge in other fields. The program has been structured to favor interactions among attendees coming from many different horizons, scientifically, geographically, from academia and from industry.
+
+We would like to sincerely thank our keynote and invited speakers: 
+\begin{itemize}
+	\item Professor Lei Wang, Deputy Director of the Institute of Biomedical and Health Engineering, Shenzhen Institutes of Advanced Technology, China; \\
+	\item Associate Professor Jinyan Li, Faculty of Engineering and IT, University of Technology Sydney, Australia;  \\
+	\item Professor Rezaul Begg, College of Sport and Exercise Science, Victoria University, Australia; \\
+	\item Professor Lizhu Zhou, Department of Computer Science and Technology, Tsinghua University, China; \\
+	\item Professor Michael Steyn, UQ Centre for Clinical Research, University of Queensland, Australia 
+\end{itemize}
+ 
+
+Our thanks also go to the host organization, Victoria University, Australia; the support of the following research funding Australian Research Council Linkage Project LP100200682 and National Natural Science Foundation of China (No. 61332013). Finally, we acknowledge all those who contributed to the success of HIS 2015 but whose names were listed here.
+
+
+
+\vspace{1cm}
+\begin{flushright}\noindent
+May 2015 \hfill Xiaoxia Yin\\
+Kendall Ho\\
+Daniel Zeng\\
+Uwe Aickelin\\
+Rui Zhou\\
+Hua Wang 
+\end{flushright}
+
+
+
+
+\chapter*{Organization}
+%
+\section*{General Co-chairs}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Yanchun Zhang & Victoria University, Australia and \hfil\break Fudan University, China \\
+Michael Blumenstein & Griffith University, Australia
+\end{tabular}
+%
+\section*{Program Co-chairs}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Xiaoxia Yin & Victoria University, Australia \\
+Kendall Ho & The University of British Columbia, Canada \\
+Daniel Zeng & The University of Arizona, USA and \hfil\break Chinese Academy of Sciences, China\\
+Uwe Aickelin & The University of Nottingham, UK
+\end{tabular}
+%
+%
+%
+
+\section*{Conference Organization Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Hua Wang & Victoria University, Australia
+\end{tabular}
+%
+
+\section*{Industry Program Co-chairs}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Jeffrey Soar & University of Southern Queensland, Australia \\
+Lei Liu & Fudan University, China
+\end{tabular}
+%
+\section*{Tutorial Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Xingshe Zhou & Northwestern Polytechnical University, China
+\end{tabular}
+
+\section*{Workshop Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Chaoyi Pang & Zhejiang University (NIT), China
+\end{tabular}
+%
+\section*{Publicity Co-chairs}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Xiaohui Tao & University of Southern Queensland, Australia\\
+Jenna Reps & The University of Nottingham, UK
+\end{tabular}
+%
+\section*{Panel Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Lei Wang & Shenzhen Institute of Advanced Technology, \hfil\break  Chinese Academy of Sciences, China
+\end{tabular}
+%
+\section*{Conference Website Co-chairs}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Zhangwei Jiang & Chinese Academy of Sciences, China \\
+Rui Zhou & Victoria University, Australia
+\end{tabular}
+%
+\section*{Publication Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Rui Zhou & Victoria University, Australia
+\end{tabular}
+%
+
+%
+\section*{Local and Financial Chair}
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Irena Dzuteska & Victoria University, Australia
+\end{tabular}
+%
+
+%
+%
+\section*{Program Committee}
+
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Mathias	Baumert	& The University of Adelaide, Australia\\
+Klemens	Boehm	&	Karlsruhe Institute of Technology, Germany\\
+Ilvio	Bruder	& Universit\"{a}t Rostock, Germany\\
+Yunpeng	Cai	& Shenzhen Institutes of Advanced Technology \hfil\break Chinese Academy of Sciences, China \\
+Jeffrey	Chan	&	The University of Melbourne, Australia \\
+Song	Chen &	University of Maryland, Baltimore County, USA\\
+Jan	Chu	& Flinders University, Australia \\
+Xuan-Hong	Dang &	University of California at Santa Barbara, USA \\
+Hongli Dong  & University of Duisburg-Essen, Germany \\
+Ling	Feng	& Tsinghua University, China \\
+Yi-Ke	Guo	& University of Utah, USA \\
+Xiao He & Tsinghua University, China \\
+Zhisheng Huang  &  Vrije Universiteit Amsterdam, The Netherlands \\
+Du	Huynh	& The University of Western Australia, Australia \\
+Wenjing	Jia	&	University of Technology, Sydney, Australia \\
+Clement	Leung	& Hong Kong Baptist University, Hong Kong, China \\
+Yidong	Li	& Beijing Jiaotong University, China \\
+Xi Liang & IBM Research, Australia \\
+Xiaohui	Liu	& Brunel University, London, UK \\
+Zhiyuan Luo &   University of London, UK \\
+Gang	Luo	&	University of Utah, USA \\
+Nigel Martin & University of London, UK \\
+Fernando Jose	Martin Sanchez	& The University of Melbourne, Australia \\
+Brian	Ng	& The University of Adelaide, Australia \\ 
+Prema	Sankaran &	Thiagarajar School of Management, India \\
+Huseyin	Seker	&	De Montfort University, UK \\
+Bo	Shen	& Donghua University, China \\
+Siuly	Siuly	& Victoria University, Australia \\
+\end{tabular}
+
+\begin{tabular}{@{}p{5cm}@{}p{7.2cm}@{}}
+Wei	Song	& Dalarna University, Sweden \\
+Weiqing Sun & University of Toledo, USA \\
+Qixin	Wang	& The Hong Kong Polytechnic University, Hong Kong, China \\
+Juanying Xie & Shaanxi Normal University, China \\
+Chunxiao Xing & Tsinghua University, China \\
+Deqin	Yan	&	Liaoning Normal University, Dalian, China \\
+Shengxiang	Yang &	De Montfort University, UK \\
+Haolan	Zhang	& Zhejiang University, China \\
+Xiaolong	Zheng	& Chinese Academy of Sciences, China \\
+Fengfeng	Zhou & Shenzhen Institutes of Advanced Technology, \hfil\break	Chinese Academy of Sciences, China
+%
+\end{tabular}
+
+%
+%\section*{Sponsoring Institutions}
+%
+%Bernauer-Budiman Inc., Reading, Mass.\\
+%The Hofmann-International Company, San Louis Obispo, Cal.\\
+%Kramer Industries, Heidelberg, Germany
+%
+\tableofcontents
+%
+\mainmatter              % start of the contributions
+
+% first contribution
+
+% first contribution
+
+\title{Reality mining in eHealth}
+%
+%\titlerunning{Hamiltonian Mechanics}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%
+\author{Peter Wlodarczak \and Jeffrey Soar \and Mustafa Ally}
+%
+%\authorrunning{Ivar Ekeland et al.}   % abbreviated author list (for running head)
+%
+%%%% list of authors for the TOC (use if author list has to be modified)
+%\tocauthor{Peter Wlodarczak, Prof. Jeffrey Soar, Dr. Mustafa Ally}
+
+\index{Wlodarczak, Peter}
+\index{Soar, Jeffrey}
+\index{Ally, Mustafa}
+
+% use the command \index{<name>} for index entries
+
+%
+\institute{\email{wlodarczak@gmail.com}\\ 
+%\and
+%\email{Jeffrey.Soar@usq.edu.au},\\
+%\and
+%\email{Mustafa.Ally@usq.edu.au}
+}
+
+\maketitle              % typeset the title of the contribution
+
+\clearpage
+
+% second contribution
+
+\setcounter{page}{7}
+
+\title{Analysis and comparison of the IEEE 802.15.4 and 802.15.6 wireless standards based on MAC layer}
+
+\author{Renwei Huang \and Zedong Nie \and Changjiang Duan \and Yuhang Liu \and Liya Jia \and Lei Wang}
+
+\index{Huang, Renwei}
+\index{Nie, Zedong}
+\index{Duan, Changjiang}
+\index{Liu, Yuhang}
+\index{Jia, Liya}
+\index{Wang, Lei}
+% use the command \index{<name>} for index entries
+
+\institute{Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China \\
+\email{zd.nie@siat.ac.cn}}
+
+\maketitle
+
+\clearpage
+
+% third contribution
+
+\setcounter{page}{18}
+
+\title{Securing Electronic Medical Record and Electronic Health Record Systems through an Improved Access Control}
+
+\author{Pasupathy Vimalachandran \and Hua Wang \and Yanchun Zhang}
+
+\index{Vimalachandran, Pasupathy}
+\index{Wang, Hua}
+\index{Zhang, Yanchun}
+
+% use the command \index{<name>} for index entries
+
+\institute{Centre for Applied Informatics, College of Engineering and Science, Victoria University, Melbourne Australia \\
+\email{Pasupathy.Vimalachandran@live.vu.edu.au}}
+
+\maketitle
+
+\clearpage
+
+% fourth contribution
+
+\setcounter{page}{27}
+
+\title{Supporting Frontline Health Workers through the Use of a Mobile Collaboration Tool}
+\author{Jane Li \and Leila Alem \and Weidong Huang}
+
+\index{Li, Jane}
+\index{Alem, Leila}
+\index{Huang, Weidong}
+
+% use the command \index{<name>} for index entries
+
+\institute{CSIRO Digital Productivity Flagship, PO Box 76, Epping NSW 1710, Australia \\
+University of Technology, Sydney, Australia \\
+University of Tasmania, Australia \\
+\email{jane.li@csiro.au}}
+
+\maketitle
+
+\clearpage
+
+% fifth contribution
+
+
+\setcounter{page}{33}
+
+\title{Canonical document for medical data exchange}
+
+\author{Sanae Mazouz \and OuÃ§amah Mohammed Cherkaoui Malki \and El Habib Nfaoui}
+
+\index{Mazouz, Sanae}
+\index{Malki, OuÃ§amah Mohammed Cherkaoui}
+\index{Nfaoui,El Habib}
+% use the command \index{<name>} for index entries
+
+\institute{Department of Computer Science, Faculty of Science Dhar El Mahraz, Fez, Morocco \\
+\email{sanae.mazouz@gmail.com}}
+
+\maketitle
+
+\clearpage
+
+% sixth contribution
+
+\setcounter{page}{43}
+
+\title{Identifying Candidate Risk Factors for Prescription Drug Side Effects using Causal Contrast Set Mining}
+
+\author{Jenna Reps \and Zhaoyang Guo \and Haoyue Zhu \and Uwe Aickelin}
+
+\index{Reps,Jenna}
+\index{Guo, Zhaoyang}
+\index{Zhu, Haoyue}
+\index{Aickelin, Uwe}
+% use the command \index{<name>} for index entries
+
+\institute{School of Computer Science, University of Nottingham, Nottingham, NG8 1BB \\
+\email{jenna.reps@nottingham.ac.uk}}
+
+\maketitle
+
+\clearpage
+
+% seventh contribution
+
+\setcounter{page}{54}
+
+\title{Analyzing Sleep Stages in Home Environment based on Ballistocardiography}
+
+\author{Hongbo Ni \and Tingzhi Zhao \and Xingshe Zhou \and Zhu Wang \and Lei Chen \and Jun Yang}
+
+\index{Ni, Hongbo}
+\index{Zhao, Tingzhi}
+\index{Zhou, Xingshe}
+\index{Wang, Zhu}
+\index{Chen, Lei}
+\index{Yang, Jun}
+% use the command \index{<name>} for index entries
+
+\institute{School of Computer Science, Northwestern Polytechnic University, China \\
+Aeromedicine Institute of P.L.A, China \\
+\email{nihb@nwpu.edu.cn}}
+
+\maketitle
+
+\clearpage
+
+% eighth contribution
+
+\setcounter{page}{67}
+
+\title{Heart Rate Variability Biofeedback Treatment for Post-Stroke Depression Patients: A Pilot Study}
+
+\author{Xin Li \and Tong Zhang \and Luping Song \and Guigang Zhang \and Chunxiao Xing}
+
+\index{Li, Xin}
+\index{Zhang, Tong}
+\index{Song, Luping}
+\index{Zhang, Guigang}
+\index{Xing, Chunxiao}
+% use the command \index{<name>} for index entries
+
+\institute{School of Rehabilitation Medicine, Capital Medical University, Bejing, China \\
+Department of Comprehensive Rehabilitation, China Rehabilitation Research Center \\
+Research Institute of Information Technology, Tsinghua National Laboratory for Information Science and Technology, Department of Computer Science and Technology, Tsinghua University, Beijing, China\\
+\email{horsebackdancing@sina.com}}
+
+\maketitle
+
+\clearpage
+
+
+% ninth contribution
+
+\setcounter{page}{78}
+
+\title{A New Approach for Face Detection based on Photoplethysmographic Imaging}
+
+\author{He Liu \and Tao Chen \and Qingna Zhang \and Lei Wang}
+
+\index{Liu, He}
+\index{Chen, Tao}
+\index{Zhang, Qingna}
+\index{Wang, Lei}
+% use the command \index{<name>} for index entries
+
+\institute{Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, China \\
+Haerbin Institute of Technology, China \\
+\email{wang.lei@siat.ac.cn}}
+
+\maketitle
+
+\clearpage
+
+%tenth contribution
+
+\setcounter{page}{90}
+
+\title{Biometrics Applications in e-Health Security: A Preliminary Survey}
+
+\author{Ebenezer Okoh \and Ali Ismail Awad}
+
+\index{Okoh, Ebenezer}
+\index{Awad,Ali Ismail}
+
+% use the command \index{<name>} for index entries
+
+\institute{Department of Computer Science, Electrical and Space Engineering, Lule\r{a} University of Technology, Lule\r{a}, Sweden\\
+Faculty of Engineering, Al Azhar University, Qena, Egypt\\
+\email{ali.awad@ltu.se}}
+
+\maketitle
+
+\clearpage
+
+
+% eleventh contribution
+
+\setcounter{page}{102}
+
+\title{Developing a health information systems approach to a novel student health clinic: meeting the educational and clinical needs of an interprofessional health service}
+\author{James Browne \and Aileen Escall \and Andi Jones \and Maximilian de Courten \and Karen T. Hallam}
+
+\index{Browne, James}
+\index{Escall, Aileen}
+\index{Jones, Andi}
+\index{de Courten, Maximilian}
+\index{Hallam, Karen T.}
+% use the command \index{<name>} for index entries
+
+\institute{IPEP Clinic, Victoria University \\
+Centre for Chronic Disease, Victoria University \\
+\email{andi.jones@vu.edu.au}}
+
+\maketitle
+
+\clearpage
+
+
+% twelfth contribution
+
+\setcounter{page}{108}
+
+\title{A stable gene subset selection algorithm for cancers}
+\author{Juanying Xie \and Hongchao Gao}
+
+\index{Xie, Juanying}
+\index{Gao, Hongchao}
+
+% use the command \index{<name>} for index entries
+
+\institute{School of Computer Science, Shaanxi Normal University, Xiâ€™an, 710062, PR China \\
+\email{xiejuany@snnu.edu.cn}}
+
+\maketitle
+
+\clearpage
+
+% thirteenth contribution
+
+\setcounter{page}{120}
+
+\title{Toward establishing a comprehensive public health service platform for chronic disease management and medication in China: A practice in building a smart hypertension medical system}
+
+\author{Yuncheng Hua \and Jue Xie \and Lei Liu \and Anjun Chen}
+
+\index{Hua,Yuncheng}
+\index{Xie,Jue}
+\index{Liu,Lei}
+\index{Chen,Anjun}
+% use the command \index{<name>} for index entries
+
+\institute{Intelligent Medical Technology, Suzhou Industrial Park, China \\
+Monash Universityâ€“Southeast University Joint Research Institute, Suzhou, China \\
+Institute of Biomedical Sciences, Fudan University, Shanghai, China \\
+\email{Jue.xie@monash.edu}}
+
+\maketitle
+
+\clearpage
+
+%fourteenth contribution
+
+\setcounter{page}{130}
+
+\title{TeenChat: A Chatterbot System for Sensing and
+Releasing Adolescentsâ€™ Stress}
+
+\author{Jing Huang \and Qi Li \and Yuanyuan Xue \and Taoran Cheng \and Shuangqing Xu \and Jia Jia \and Ling Feng}
+
+\index{Huang, Jing}
+\index{Li, Qi}
+\index{Xue, Yuanyuan}
+\index{Cheng, Taoran}
+\index{Xu, Shuangqing}
+\index{Jia, Jia}
+\index{Feng, Ling}
+% use the command \index{<name>} for index entries
+
+\institute{Dept. of Computer Science and Technology, Tsinghua University, Beijing, China \\
+\email{j-huang14@mails.tsinghua.edu.cn}}
+
+\maketitle
+
+\clearpage
+
+% fifteenth contribution
+
+\setcounter{page}{142}
+
+\title{Ethical Quality in eHealth: A Challenge with Many Facets}
+
+\author{Marjo Rissanen}
+
+\index{Rissanen, Marjo}
+% use the command \index{<name>} for index entries
+
+\institute{Aalto University School of Science, Finland \\
+\email{mkrissan@gmail.com}}
+
+\maketitle
+
+\clearpage
+
+% sixteenth contribution
+
+\setcounter{page}{151}
+
+\title{Experiences in Developing and Testing an Ambient Assisted Living Course for Further Education}
+\author{Ilvio Bruder \and Andreas Heuer \and Thomas Karopka \and Juliane Schuldt \and Kerstin Kosche}
+
+\index{Bruder, Ilvio}
+\index{Heuer, Andreas}
+\index{Karopka, Thomas}
+\index{Schuldt, Juliane}
+\index{Kosche, Kerstin}
+% use the command \index{<name>} for index entries
+
+\institute{Database Research Group, University of Rostock, Germany \\
+BioCon Valley GmbH Greifswald, Germany \\
+Further education, University of Rostock, Germany \\
+\email{ilvio.bruder@uni-rostock.de}}
+
+\maketitle
+
+\clearpage
+
+%% seventeenth contribution
+%
+\setcounter{page}{162}
+
+\title{Prognostic Reporting of p53 Expression by Image Analysis in Glioblastoma Patients: Detection and Classification}
+\author{Mohammad F. Ahmad Fauzi \and Hamza N. Gokozan \and Christopher R. Pierson \and Jose J. Otero \and Metin N. Gurcan}
+
+\index{Fauzi, Mohammad F. Ahmad}
+\index{Gokozan, Hamza N.}
+\index{Pierson, Christopher R.}
+\index{Otero, Jose J.}
+\index{Gurcan, Metin N.}
+% use the command \index{<name>} for index entries
+
+\institute{Faculty of Engineering, Multimedia University, Cyberjaya, Selangor, Malaysia \\ 
+Department of Pathology, The Ohio State University, Columbus, Ohio, USA \\
+Nationwide Childrenâ€™s Hospital Department of Pathology and Laboratory Medicine, Columbus, Ohio, USA \\
+Department of Biomedical Informatics, The Ohio State University, Columbus, Ohio, USA \\
+\email{faizal1@mmu.edu.my}}
+
+\maketitle
+
+\clearpage
+
+%% eighteenth contribution
+
+\setcounter{page}{171}
+
+\title{Identification of Schizophrenia-Associated Gene polymorphisms using Hybrid Filtering Feature Selection with Structural Information}
+\author{Yingying Wang \and  Zichun Zeng \and Yunpeng Cai}
+
+\index{Wang, Yingying}
+\index{Zeng, Zichun}
+\index{Cai,Yunpeng}
+% use the command \index{<name>} for index entries
+
+\institute{Shenzhen Institutes of Advance Technology, Chinese Academy of Sciences, Shenzhen, P.R. China \\ 
+University of Science and Technology of China, Hefei, P.R. China \\
+\email{yp.cai@siat.ac.cn}}
+
+\maketitle
+
+\clearpage
+
+
+%nineteenth contribution
+
+\setcounter{page}{182}
+
+\title{Mobile Clinical Scale Collection System for In-hospital Stroke Patient Assessments Using Html5 Technology}
+
+\author{Furu Xiang \and Wenxuan Guan \and Xingxian Huang \and Xiaomao Fan \and Yunpeng Cai \and Haibo Yu}
+
+\index{Xiang, Furu}
+\index{Guan, Wenxuan}
+\index{Huang, Xingxian}
+\index{Fan, Xiaomao}
+\index{Cai, Yunpeng}
+\index{Yu, Haibo}
+% use the command \index{<name>} for index entries
+
+\institute{Shenzhen Institutes of Advance Technology, Chinese Academy of Sciences, Shenzhen, P.R. China \\
+Shenzhen Traditional Chinese Medicine (TCM) hospital \\
+University of Science and Technology of China, Hefei, P.R. China \\
+\email{yp.cai@siat.ac.cn}}
+
+\maketitle
+
+\clearpage
+
+% twentieth contribution
+
+\setcounter{page}{193}
+
+\title{Comparative evaluation of two systems for integrating biometric data from self-quantification}
+\titlerunning{Mining Order-Preserving Submatrices}
+\author{Bibin Punnoose \and Kathleen Gray}
+
+\index{Punnoose, Bibin}
+\index{Gray, Kathleen}
+
+% use the command \index{<name>} for index entries
+
+\institute{University of Melbourne, Melbourne, Victoria, Australia \\
+\email{kgray@unimelb.edu.au}}
+
+\maketitle
+
+\clearpage
+
+%twenty-first contribution
+
+\setcounter{page}{199}
+
+\title{Investigating Various Technologies Applied to Assist Seniors}
+
+\author{Pouria Khosravi \and Amir Hossein Ghapanchi \and Michael Blumenstein}
+
+\index{Khosravi, Pouria}
+\index{Ghapanchi, Amir Hossein}
+\index{Blumenstein, Michael}
+
+% use the command \index{<name>} for index entries
+
+\institute{School of Information and Communication Technology, Griffith University, Queensland, Australia \\
+\email{a.ghapanchi@griffith.edu.au}}
+
+\maketitle
+
+\clearpage
+
+% twenty-second contribution
+
+
+\setcounter{page}{211}
+
+\title{Characteristics of research on the application of three-dimensional immersive virtual worlds in health}
+\author{Reza Ghanbarzadeh \and Amir Hossein Ghapanchi \and Michael Blumenstein}
+
+\index{Ghanbarzadeh, Reza}
+\index{Ghapanchi, Amir Hossein}
+\index{Blumenstein, Michael}
+
+% use the command \index{<name>} for index entries
+
+\institute{School of Information and Communication Technology, Griffith University, Gold Coast, Queensland, Australia \\
+\email{a.ghapanchi@griffith.edu.au}}
+
+\maketitle
+
+\clearpage
+
+
+
+% twenty-third contribution
+
+
+\setcounter{page}{223}
+
+\title{Trend Prediction of Biomedical Technology by Semantic Analysis}
+\author{Xiaomeng Sun \and Kexu Zhang \and Peng Nan \and Lei Liu}
+
+\index{Sun, Xiaomeng}
+\index{Zhang, Kexu}
+\index{Nan,Peng}
+\index{Liu, Lei}
+
+% use the command \index{<name>} for index entries
+
+\institute{Fudan University, No.138, Medical School Road, Shanghai, China \\
+Shanghai Ebuinfo Co., Ltd., No. 170, Lane 277, Chen Hui Road, Shanghai, China \\
+Fudan University, No. 2005, Songhu Road, Shanghai, China \\
+\email{liulei@fudan.edu.cn}}
+
+\maketitle
+
+\clearpage
+
+
+
+% twenty-fourth contribution
+
+
+\setcounter{page}{230}
+
+\title{SMS for Life in Burundi and Zimbabwe: A Comparative Evaluation}
+\author{Gerardo Luis Dimaguila}
+
+\index{Dimaguila, Gerardo Luis}
+% use the command \index{<name>} for index entries
+
+\institute{School of Information, University of Melbourne, Melbourne, Victoria, Australia \\
+\email{dgl@student.unimelb.edu.au}}
+
+\maketitle
+
+\clearpage
+
+% twenty-fifth contribution
+
+\setcounter{page}{242}
+
+\title{Healthcare Data Validation and Conformance Testing Approach Using Rule-Based Reasoning}
+\author{Hira Jawaid \and Khalid Latif \and Hamid Mukhtar \and Farooq Ahmad \and Syed Ali Raza}
+
+\index{Jawaid, Hira}
+\index{Latif, Khalid}
+\index{Mukhtar, Hamid}
+\index{Ahmad, Farooq}
+\index{Raza, Syed Ali}
+% use the command \index{<name>} for index entries
+
+\institute{School of Electrical Engineering and Computer Science, NUST, Islamabad, Pakistan \\
+Department of Computer Science, College of Computer Sciences and Information Technology (CCSIT), King Faisal University, Alahssa 31982, Kingdom of Saudi Arabia \\
+\email{hira.jawaid@seecs.edu.pk}}
+\maketitle
+
+\clearpage
+
+
+\setcounter{page}{249}
+
+\addtocmark[2]{Author Index} % additional numbered TOC entry
+\renewcommand{\indexname}{Author Index}
+\printindex
+
+
+\end{document}

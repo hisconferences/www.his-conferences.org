@@ -1,0 +1,49 @@
+\section{Related Work}
+\textbf{Chat robots.}
+Q\&A systems respond to users by matching questions and question
+-answer pairs in knowledge bases~\cite{2Moldovan2001,3Tapeh2008}, retrieving relevant documents and Web pages from local
+document collections and global Internet~\cite{6Start,7Encarta}, or extracting answers from relevant documents or Web pages~\cite{8lin2003,9katz2003}.
+FAQ (Frequently Asked Questions) is a typical knowledge-based Q\&A system, whose knowledge base accommodates
+frequently asked question-answer pairs. The main task of the system is to match users' questions to corresponding
+question-answer pairs~\cite{5Burke1997}.
+
+As a special kind of Q\&A system, chat robots (also called chatterbots, chatbots or artificial conversational systems) emphasize hominization, aiming to interact with users in a human-like friendly way.
+ELIZA~\cite{10weizenbaum1966} was the first chatbot, developed by Weizenbaum in 1960s. It
+acts like a psychotherapist to help speakers maintain the sense of being heard and understood.
+Inheriting the mechanism of ELIZA, another famous chatbot ALICE~\cite{11ALice} engaged in a conversation with a human
+by applying some heuristical pattern matching rules to the human's inputs.
+ALICE won the Loebner Prize for the most human-like computer in 2000, 2001, and 2004. Since then, chat robots have found wide application areas.
+In education, they could help human users
+practice their conversational skills in foreign languages~\cite{13zakos2008,14stewart2007},
+act as virtual Confucius for promoting traditional Chinese culture\cite{16wang2013} or
+build intelligent tutoring systems to tailor to individual needs~\cite{17kerly2007,18latham2012}.
+In E-commerce, chat robots could help users find relevant products~\cite{20chai2001,21goh2003}. In medical health care, chat robots could give control/management advice to diabetes patients~\cite{22lokman9},
+impart knowledge about H5N1 pandemic crisis to community~\cite{21goh2003},
+answer adolescent sex, drug, and alcohol related questions~\cite{26crutzen2011} and
+general psychology specific questions~\cite{25liu2013}. Besides, recently developed chatbot systems~\cite{28augello2008,30SIMSIMI,31xiaohuangji} could recognize users' humoristic expressions and generate humorous sentences for time sharing and entertainment purpose.
+
+
+\textbf{Textual Emotion Recognition.}
+Detection emotion through keywords is the most direct method~\cite{39subasic2001,40olveres1998}.
+\cite{42valitutti2004} made use of lexical affinity to enhance the keyword-based detection accuracy.
+However, because of the existence of negation and various sentence structures,
+only considering keywords is not enough. \cite{43neviarouskaya2007,44wu2006} further
+applied natural language processing methods to parse sentences and
+proposed rules to reveal the relationships between a particular expression and emotion.
+\cite{45yang2007,46teng2006} regarded emotion recognition as a classification problem,
+and used machine learning methods to classify a text into different emotions.
+\cite{47balahur2011,49balahur2012affect} recognized emotion on the basis of some commonsense knowledge.
+
+\textbf{Stress Detection.} Most existing stress detection methods rely on psychological scales and/or physiological devices,
+but in reality, people are not willing to go for a psychologist or take some contact sensors with them.
+Recently, researchers started to pay attention to the social media which also reveals users' stress signals.
+\cite{34xue2014} proposed to detect adolescent stress from micro-blog.
+\cite{33lin2014} investigated the correlations between users' stress and their tweeting contents,
+social engagement, and behavior patterns, and then built a deep neural network model
+to detect users' stress.
+
+The \emph{TeenChat} tool presented in this paper intends to serve adolescent chatters by
+sensing their possible stress in study, self-cognition, inter-personal, or affection throughout the conversation context,
+and encourage them to cope with the stress in a positive way.
+
+
